@@ -1,0 +1,149 @@
+/*
+    WordPress admin Overrides & Additions
+*/
+
+#wpcontent {
+    padding-left: 0 !important;
+    position: relative
+}
+
+#wpbody {
+    padding-left: 20px;
+}
+
+#titlediv #title {
+    margin: 0;
+}
+
+.wp-list-table {
+    border-radius: 4px;
+}
+
+.postbox {
+    border-radius: 4px;
+}
+
+    .postbox > h2 {
+        margin: 10px 0 0 0;
+        padding: 8px 12px;
+    }
+
+    .postbox .inside {
+        margin-bottom: 0;
+    }
+
+/*
+    ContentLock Header
+*/
+
+.contentlock-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    font-size: 1.75rem;
+    border-bottom: 1px solid #ddd;
+}
+
+    .contentlock-header img {
+        margin-right: 1rem;
+    }
+
+    .contentlock-header .admin-title {
+        font-weight: 400;
+        color: #646970;
+        letter-spacing: 0.05rem;
+    }
+
+    .contentlock-header .admin-title span {
+        font-weight: 800;
+        letter-spacing: 0.10rem;
+        background: #9901AB;
+        background: linear-gradient(to bottom, #9901AB 0%, #0071BD 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+/*
+    Editor Header
+*/
+
+.editor-header {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+    .editor-header .input-container {
+        margin-bottom: 0.5rem;
+    }
+
+    .editor-header .button-container {
+        margin-bottom: 0.5rem;
+    }
+
+.icon {
+    color: #50575e;
+}
+
+/*
+    Responsive
+*/
+
+@media screen and (max-width: 600px) {
+
+    #wpcontent {
+        padding-top: 46px;
+    }
+
+}
+
+@media screen and (max-width: 782px) {
+
+    #wpbody {
+        padding-left: 10px;
+    }
+
+    .contentlock-header {
+        padding: 10px 12px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* 
+        Grid
+    */
+
+    .grid-container {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*
+        Editor Header
+    */
+
+    .editor-header {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .editor-header .input-container {
+        flex: 1 1 auto;
+        box-sizing: border-box;
+    }
+
+    .editor-header .button-container {
+        flex: 0 1 auto;
+        margin-left: 1rem;
+    }
+
+}
